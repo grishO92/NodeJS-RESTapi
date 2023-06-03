@@ -22,7 +22,7 @@ This is a barebone Node.js REST API template. It provides a starting point for d
 
 ## Starting the Server
 
-- Run nodemon to start the server.
+- In the terminal run nodemon to start the server.
 
 ## Request and Response Formats
 
