@@ -6,7 +6,7 @@ export interface IAuthor {
 
 export interface IAuthorModel extends IAuthor, Document {}
 
-const authorSchema: Schema = new Schema(
+const AuthorSchema: Schema = new Schema(
   {
     name: { type: String, required: true },
   },
@@ -15,4 +15,4 @@ const authorSchema: Schema = new Schema(
   }
 );
 
-export default mongoose.model<IAuthorModel>('Author', authorSchema);
+export default mongoose.model<IAuthorModel>('Author', AuthorSchema);
