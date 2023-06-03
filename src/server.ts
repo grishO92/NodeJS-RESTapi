@@ -9,6 +9,7 @@ import { serverStatusInfo } from './config/ServerStatusInfo';
 import { apiRules } from './config/apiRules';
 import { errorHandler } from './config/errorHandler';
 import { healthCheck } from './config/healthCheck';
+import authorRoutes from './routes/Author';
 
 const router = express();
 
@@ -32,6 +33,7 @@ const startServer = (): void => {
   router.use(apiRules);
 
   /** Routes */
+  router.use('/authors', authorRoutes);
 
   router.get('/ping', healthCheck);
   router.use(errorHandler);
